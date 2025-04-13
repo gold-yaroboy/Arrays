@@ -20,5 +20,8 @@ void main()
 	cout << endl;
 	cout << endl;
 	cout << "1.3)" << endl;
-	for (int i = SIZE; i >= 1; i--) cout << Array[i] << "\t";
+	for (int j = SIZE-1; (j+SIZE) >= SIZE; j--)cout << Array[j] << "\t";
+	cout << endl;
+	cout << endl;
+	cout << "1.4)" << endl;
 }
