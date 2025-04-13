@@ -12,8 +12,8 @@ void main()
 	cout << "Добрый вечер, для работы необходимо ввести исходные данные" << endl;
 	cout << "1.1)" << endl;
 	cout << "Перечислите 5 элементов массива на отдельных строках: " << endl;
-	int Array[SIZE] = {};
-	for (int i = 0;i < SIZE; i++)cin >> Array[i];
+	int Array[SIZE];
+	for (int i = 0; i < SIZE; i++)cin >> Array[i];
 	cout << endl;
 	cout << "1.2)" << endl;
 	for (int i = 0; i < SIZE; i++)cout << Array[i] << "\t";
@@ -24,4 +24,19 @@ void main()
 	cout << endl;
 	cout << endl;
 	cout << "1.4)" << endl;
+	int s = 0;
+	for (int l = 0; l < SIZE; l++)s += Array[l];
+	int m = s / SIZE;
+	cout << "Сумма: " << s << "\t" << "Среднее-арифметическое: " << m;
+	cout << endl;
+	cout << endl;
+	cout << "1.5)" << endl;
+	int min, max;
+	for (int i = 1; i <= SIZE; i++) 
+	{
+		if (Array[i + 1] < Array[i])min = Array[i + 1];
+		else min = Array[i];
+	}
+	cout << "Минимальное значение: " << min << endl;
+	//cout << "Максимальное значение: " << max << endl;
 }
