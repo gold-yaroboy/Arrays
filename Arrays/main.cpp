@@ -33,7 +33,7 @@ void main()
 	cout << "1.5)" << endl;
 	int min = Array[0];
 	int max = Array[0];
-	for (int i = 1; i < SIZE; i++) { if (Array[i] < min)min = Array[i]; }
-	for (int i = 1; i < SIZE; i++) { if (Array[i] > max)max = Array[i]; }
-	cout << "Минимальное значение: " << min << "\t" << "Максимальное значение: " << max << endl;
+	for (int i = 0; i < SIZE; i++) { if (Array[i] < min)min = Array[i]; }
+	for (int i = 0; i < SIZE; i++) { if (Array[i] > max)max = Array[i]; }
+	cout << "Минимальное значение: " << min << "\t\t" << "Максимальное значение: " << max << endl;
 }
