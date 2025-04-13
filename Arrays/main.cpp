@@ -31,12 +31,9 @@ void main()
 	cout << endl;
 	cout << endl;
 	cout << "1.5)" << endl;
-	int min, max;
-	for (int i = 1; i <= SIZE; i++) 
-	{
-		if (Array[i + 1] < Array[i])min = Array[i + 1];
-		else min = Array[i];
-	}
-	cout << "Минимальное значение: " << min << endl;
-	//cout << "Максимальное значение: " << max << endl;
+	int min = Array[0];
+	int max = Array[0];
+	for (int i = 1; i < SIZE; i++) { if (Array[i] < min)min = Array[i]; }
+	for (int i = 1; i < SIZE; i++) { if (Array[i] > max)max = Array[i]; }
+	cout << "Минимальное значение: " << min << "\t" << "Максимальное значение: " << max << endl;
 }
