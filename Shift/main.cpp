@@ -21,4 +21,5 @@ void main()
 		for (int i = 0; i < SIZE; i++)cout << Array[i] << "\t";
 		cout << endl;
 	}
+	//cдвиг влево, надо сдвинуть вправо
 }
