@@ -13,6 +13,14 @@ void main()
 	int n;
 	cout << "Введите число, а я сним что нибудь придумаю: "; 
 	cin >> n; cout << endl;
-	int arr[n];
-
+	cout << "В двоичной СС: ";
+	const int size = 64;
+	int arr[size] = {};
+	int temp;
+	for (int i = 0; i < 10; i++)
+	{
+		temp = n % 2;
+		arr [size - 1] = arr [temp];
+		cout << temp << "\t";
+	}
 }
