@@ -8,21 +8,22 @@ void main()
 {
 	setlocale(LC_ALL, "");
 
-	// Десятичное число, введённое Юзером в консоли 
-	// перевести в двоичную и шестнадцатиричную системы исчесленияя
-	int n;
+	int num;
 	cout << "Введите число, а я сним что нибудь придумаю: "; 
-	cin >> n; cout << endl;
+	cin >> num; cout << endl;
 	
-	cout << "В двоичной СС:" << "\t";
-	const int size = 64;
-	int arr[size] = {};
-	int temp;
-	for (int i = 0; i < n; i++)
-	{
-		temp = arr[n % 2];
-		arr[i - 1] = arr[i];
-		arr[size - 1] = temp;
-		cout << temp << "\t";
-	}
+    int binary[32] = { 0 };
+    int i = 0;
+    for (i = 0; num > 0; i++) 
+    {
+        binary[i] = num % 2;
+        num /= 2;
+    }
+    cout << "Двоичное: ";
+    if (i == 0) cout << "0";
+    else for (int j = i - 1; j >= 0; j--)cout << binary[j];
+    cout << endl;
+
+    //Шестнадцатиричное не выкупаю...
+
 }
