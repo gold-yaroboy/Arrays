@@ -9,9 +9,9 @@ void main()
     setlocale(LC_ALL, "");
 
     int num;
-	cout << "Введите число, а я сним что нибудь придумаю: "; 
+    cout << "Введите число, а я сним что нибудь придумаю: "; 
     cin >> num; cout << endl;
-	
+
     int binary[32] = { 0 };
     int i = 0;
     for (i = 0; num > 0; i++) 
