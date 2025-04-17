@@ -35,6 +35,6 @@ void main()
 		for (int i = 0; i < SIZE; i++)Array[i-1] = Array[i];
 		Array[SIZE-1] = buf;
 		for (int i = 0; i < SIZE; i++)cout << Array[i] << "\t";
-		cout << endl;
+		cout << endl; //ye b
 	}
 }
