@@ -32,7 +32,7 @@ void main()
 	{
 		int buf;
 		buf = Array[0];
-		for (int i = 0; i < SIZE; i++)Array[i-1] = Array[i];
+		for (int i = 1; i < SIZE; i++)Array[i - 1] = Array[i];
 		Array[SIZE-1] = buf;
 		for (int i = 0; i < SIZE; i++)cout << Array[i] << "\t";
 		cout << endl; //ye b
