@@ -41,10 +41,4 @@ void main()
 		if (Array[i] > max)max = Array[i];
 	}
 	cout << "Мин значение: " << min << "\t\t" << "Макс значение: " << max << endl;
-
-	for (int i = 0; i < SIZE; i++)
-	{
-		Array[i] = rand()%100;
-	}
-
 }
