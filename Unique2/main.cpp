@@ -28,7 +28,7 @@ void main()
 					}
 					if (!unique)break;
 				}				
-			} while (!unique);
+			}while (!unique);
 		}
 	}
 	for (int i = 0; i < ROWS; i++)
